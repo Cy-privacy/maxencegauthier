@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxence Gauthier - The Gambling Addict Ready to Cut Off His Own Balls to Play Casino</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .header {
+            background: #000000;
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.85;
+            font-weight: 400;
+        }
+
+        .content {
+            padding: 60px 40px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .info-table tr {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .info-table td {
+            padding: 16px 0;
+            vertical-align: top;
+        }
+
+        .info-table td:first-child {
+            font-weight: 600;
+            color: #666666;
+            width: 180px;
+            font-size: 0.9em;
+        }
+
+        .info-table td:last-child {
+            color: #000000;
+        }
+
+        .info-table a {
+            color: #0066cc;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .info-table a:hover {
+            text-decoration: underline;
+        }
+
+        .subsection {
+            margin-top: 40px;
+        }
+
+        .subsection-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .photo-item {
+            text-align: center;
+        }
+
+        .photo-item img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border: 1px solid #e0e0e0;
+            border-radius: 2px;
+        }
+
+        .photo-item .caption {
+            margin-top: 12px;
+            color: #666666;
+            font-size: 0.9em;
+        }
+
+        .timeline {
+            margin-top: 30px;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            padding-left: 25px;
+            border-left: 2px solid #000000;
+        }
+
+        .timeline-item h4 {
+            font-size: 1.05em;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .timeline-item p {
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        .quote-block {
+            background: #f8f8f8;
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 3px solid #000000;
+            font-style: italic;
+        }
+
+        .quote-block p {
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .quote-block .translation {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+            font-style: normal;
+            color: #000000;
+        }
+
+        .warning-list {
+            margin-top: 20px;
+        }
+
+        .warning-list li {
+            margin-bottom: 15px;
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        .warning-list strong {
+            color: #000000;
+        }
+
+        .download-box {
+            background: #f8f8f8;
+            padding: 25px;
+            margin-top: 25px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .download-box h4 {
+            font-size: 1.05em;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .download-box p {
+            color: #666666;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #000000;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: background 0.2s;
+        }
+
+        .download-btn:hover {
+            background: #333333;
+        }
+
+        .alert-box {
+            background: #000000;
+            color: white;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .alert-box h3 {
+            font-size: 1.4em;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .alert-box p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .alert-box ul {
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        .alert-box li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .bounty-box {
+            background: #1a5f1a;
+            color: white;
+            padding: 40px;
+            margin-top: 40px;
+            border: 2px solid #0d3d0d;
+        }
+
+        .bounty-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .bounty-box p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .bounty-box .contact {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .footer {
+            background: #f8f8f8;
+            padding: 40px;
+            text-align: center;
+            color: #666666;
+            font-size: 0.9em;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 60px 30px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .content {
+                padding: 40px 30px;
+            }
+
+            .info-table td:first-child {
+                display: block;
+                width: 100%;
+                padding-bottom: 5px;
+            }
+
+            .info-table td:last-child {
+                display: block;
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Maxence Gauthier - The Gambling Addict Ready to Cut Off His Own Balls to Play Casino</h1>
+            <div class="subtitle">Verified Cryptocurrency Scammer</div>
+        </div>
+
+        <div class="content">
+            <div class="bounty-box">
+                <h3>Bounty Program</h3>
+                <p><strong>Rewards available for anyone who takes action to ruin this scammer's life.</strong></p>
+                <p>If you successfully execute actions that significantly impact this individual's ability to continue scamming or cause substantial consequences for their fraudulent activities, contact for rewards.</p>
+                <div class="contact">
+                    Contact on Discord: jamieson.io
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Identity Information</h2>
+                <table class="info-table">
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Maxence Gauthier</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>February 19, 2005 (20 years old)</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>25 Rue des Mariottes<br>21121 Ahuy, France</td>
+                    </tr>
+                    <tr>
+                        <td>Discord</td>
+                        <td>@maxencez_z</td>
+                    </tr>
+                    <tr>
+                        <td>Discord ID</td>
+                        <td>1321190232405577758</td>
+                    </tr>
+                    <tr>
+                        <td>Telegram</td>
+                        <td>@Maxencezz<br>+33 7 56 96 50 63</td>
+                    </tr>
+                    <tr>
+                        <td>Snapchat</td>
+                        <td>maxencezzzzz</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td><a href="https://www.instagram.com/maxencezz" target="_blank">instagram.com/maxencezz</a></td>
+                    </tr>
+                </table>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">Family</h3>
+                    <table class="info-table">
+                        <tr>
+                            <td>Father</td>
+                            <td>François Gauthier</td>
+                        </tr>
+                        <tr>
+                            <td>Father's Facebook</td>
+                            <td><a href="https://www.facebook.com/share/1ZKtNHTMrc/?mibextid=wwXIfr" target="_blank">facebook.com/share/1ZKtNHTMrc</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sister</td>
+                            <td>Victoire Gauthier (Baddie)</td>
+                        </tr>
+                        <tr>
+                            <td>Sister's Instagram</td>
+                            <td><a href="https://www.instagram.com/vic.toiregauthier?igsh=bTc1NG02MmxrMzRm" target="_blank">instagram.com/vic.toiregauthier</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">Property</h3>
+                    <table class="info-table">
+                        <tr>
+                            <td>Location</td>
+                            <td><a href="https://www.google.com/maps/@47.3626295,5.0260293,3a,75y,10.5h,92.24t/data=!3m7!1e1!3m5!1sWcIZzP-CnEBB89AtPvUlQw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-2.237623856065028%26panoid%3DWcIZzP-CnEBB89AtPvUlQw%26yaw%3D10.5026900170842!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank">View on Google Street View</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Visual Evidence</h2>
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="1764362948990_image.png" alt="Property">
+                        <div class="caption">Family residence - 25 Rue des Mariottes, Ahuy, France</div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="1764362952117_image.png" alt="Family">
+                        <div class="caption">Maxence Gauthier with father François Gauthier</div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="1764362955170_image.png" alt="Current">
+                        <div class="caption">Maxence Gauthier (current)</div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="1764363500878_image.png" alt="Snapchat">
+                        <div class="caption">Snapchat profile screenshot</div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="1764364102684_image.png" alt="Sister 1">
+                        <div class="caption">Victoire Gauthier (sister)</div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="1764364109877_image.png" alt="Sister 2">
+                        <div class="caption">Victoire Gauthier (sister)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Father's Business</h2>
+                <table class="info-table">
+                    <tr>
+                        <td>Owner</td>
+                        <td>François Gauthier</td>
+                    </tr>
+                    <tr>
+                        <td>Business Name</td>
+                        <td>LE FLAMANT ROSE</td>
+                    </tr>
+                    <tr>
+                        <td>SIREN</td>
+                        <td>340 293 844</td>
+                    </tr>
+                    <tr>
+                        <td>SIRET</td>
+                        <td>34029384400056</td>
+                    </tr>
+                    <tr>
+                        <td>Activity</td>
+                        <td>Road Vehicle Transport</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>25 Rue des Mariottes<br>21121 Ahuy, France</td>
+                    </tr>
+                </table>
+
+                <div class="download-box">
+                    <h4>Official Business Registration Document</h4>
+                    <p>INPI (French National Institute of Industrial Property) registration document</p>
+                    <a href="Export_Portail_Data_GAUTHIER_Du_28-11-2025.pdf" download class="download-btn">Download PDF Document</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Scam Methodology</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Phase 1: Trust Building</h4>
+                        <p>Initial contact via social media. Engaged in 3 days of conversation including Discord video calls. Displayed fake cryptocurrency portfolio showing €592,509 using Delta by eToro application.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Phase 2: Investment Pitch</h4>
+                        <p>Presented vague "investment project" opportunity with minimal details. Requested cryptocurrency investment from victim.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Phase 3: Fund Misappropriation</h4>
+                        <p>Transferred victim's funds directly to Stake.com gambling platform to "mix" cryptocurrency and hide transaction trail.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Phase 4: Additional Requests</h4>
+                        <p>Requested more funds claiming project needs additional capital. Made threats when questioned about legitimacy.</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">Direct Quotes</h3>
+                    <div class="quote-block">
+                        <p>"Parce qu'il doit le mixer via Stake on t'a dit on a plus de dev"</p>
+                        <p>"Parce que dcp après tu sais plus vers où y part"</p>
+                        <div class="translation">
+                            English: "Because it has to be mixed via Stake as we told you we have no more dev" / "Because then you don't know where it goes anymore"
+                        </div>
+                    </div>
+
+                    <div class="quote-block">
+                        <p>"Reposer 1k tu peux vrm pas ? Je te donne ma carte identité mon adresse mon passeport si sa te rassure si je te scam mdrrr. Mai tu leak un truc je te bz"</p>
+                        <div class="translation">
+                            English: "Can't you send another 1k? I'll give you my ID card, my address, my passport if it reassures you if I scam you lol. But if you leak anything I'll buzz you"
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Warning Signs</h2>
+                <ul class="warning-list">
+                    <li><strong>Fake wealth display:</strong> Showed fabricated cryptocurrency portfolio to establish false credibility</li>
+                    <li><strong>Money laundering admission:</strong> Openly stated funds would be "mixed" via Stake.com to hide transaction trails</li>
+                    <li><strong>Vague project details:</strong> Never provided concrete information about investment or business plan</li>
+                    <li><strong>Gambling platform transfer:</strong> Sent victim funds to casino site instead of legitimate business</li>
+                    <li><strong>Threats:</strong> Made implicit threats when legitimacy questioned</li>
+                    <li><strong>Additional fund requests:</strong> Immediately asked for more money after receiving initial payment</li>
+                    <li><strong>False document offers:</strong> Offered identity documents to create false trust</li>
+                </ul>
+            </div>
+
+            <div class="alert-box">
+                <h3>Public Warning</h3>
+                <p><strong>This individual is actively conducting cryptocurrency fraud.</strong></p>
+                
+                <p>Do not send cryptocurrency or money to this person under any circumstances. Do not trust investment opportunities or financial projects presented.</p>
+
+                <p><strong>If contacted by this individual:</strong></p>
+                <ul>
+                    <li>Block all communication channels immediately</li>
+                    <li>Do not respond to messages or threats</li>
+                    <li>Report to platform administrators</li>
+                    <li>Document all interactions</li>
+                    <li>Report to local authorities if funds were sent</li>
+                </ul>
+
+                <p><strong>If you sent funds:</strong></p>
+                <ul>
+                    <li>Do not send additional money for any reason</li>
+                    <li>Document everything and file police report</li>
+                    <li>Block the scammer completely</li>
+                    <li>Share this report to warn others</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>This report is compiled from verified information and documented evidence.</p>
+            <p>All information provided for public awareness and fraud prevention.</p>
+            <p>Report date: November 28, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
