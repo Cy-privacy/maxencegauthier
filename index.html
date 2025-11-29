@@ -108,17 +108,8 @@
             var countdownEl = document.getElementById('countdown');
             if (!countdownEl) return;
 
-            var STORAGE_KEY = 'max_wait_start_ts_v1';
-            var DURATION_MS = 18 * 60 * 60 * 1000; // 18 hours
-
-            var stored = localStorage.getItem(STORAGE_KEY);
-            var startTs = stored ? parseInt(stored, 10) : NaN;
-            if (isNaN(startTs)) {
-                startTs = Date.now();
-                try {
-                    localStorage.setItem(STORAGE_KEY, String(startTs));
-                } catch (e) {}
-            }
+            // Target fixed time: 2025-11-28 20:00 (browser local time)
+            var target = new Date(2025, 10, 28, 20, 0, 0); // months are 0-based, so 10 = November
 
             function pad(n) { return n < 10 ? '0' + n : '' + n; }
 
@@ -132,8 +123,8 @@
             }
 
             function tick() {
-                var now = Date.now();
-                var remaining = startTs + DURATION_MS - now;
+                var now = new Date();
+                var remaining = target.getTime() - now.getTime();
                 if (remaining <= 0) {
                     countdownEl.textContent = '00:00:00';
                     window.location.href = 'wait.html';
