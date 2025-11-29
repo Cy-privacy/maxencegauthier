@@ -408,6 +408,62 @@
             line-height: 1.8;
         }
 
+        /* Waiting overlay */
+        #wait-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.78);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        #wait-box {
+            background: #111;
+            border-radius: 10px;
+            padding: 24px 28px;
+            max-width: 420px;
+            width: 90%;
+            color: #f5f5f5;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        #wait-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        #wait-subtitle {
+            font-size: 0.9em;
+            color: #bbbbbb;
+            margin-bottom: 18px;
+        }
+
+        #wait-countdown {
+            font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 1.6em;
+            letter-spacing: 0.12em;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background: #000;
+            display: inline-block;
+            margin-bottom: 14px;
+        }
+
+        #wait-note {
+            font-size: 0.8em;
+            color: #999999;
+        }
+
         @media (max-width: 768px) {
             .header {
                 padding: 60px 30px;
@@ -435,6 +491,14 @@
     </style>
 </head>
 <body>
+    <div id="wait-overlay">
+        <div id="wait-box">
+            <div id="wait-title">Waiting until Max pays</div>
+            <div id="wait-subtitle">Access to this report unlocks once the countdown reaches zero.</div>
+            <div id="wait-countdown">18:00:00</div>
+            <div id="wait-note">Countdown is based on a fixed start time stored in your browser. Refreshing will not reset it.</div>
+        </div>
+    </div>
     <div class="container">
         <div class="header">
             <h1>Maxence Gauthier : Alleged Gambling Addict Who Treats 1k Like A Life Mission</h1>
@@ -707,6 +771,59 @@
         </div>
         
         <script>
+            // 18-hour blocking countdown overlay
+            (function () {
+                var overlay = document.getElementById('wait-overlay');
+                var countdownEl = document.getElementById('wait-countdown');
+                if (!overlay || !countdownEl) {
+                    return;
+                }
+
+                var STORAGE_KEY = 'max_wait_start_ts_v1';
+                var DURATION_MS = 18 * 60 * 60 * 1000; // 18 hours
+
+                var stored = localStorage.getItem(STORAGE_KEY);
+                var startTs = stored ? parseInt(stored, 10) : NaN;
+                if (isNaN(startTs)) {
+                    startTs = Date.now();
+                    try {
+                        localStorage.setItem(STORAGE_KEY, String(startTs));
+                    } catch (e) {
+                        // ignore storage errors
+                    }
+                }
+
+                function formatTime(ms) {
+                    if (ms < 0) ms = 0;
+                    var totalSeconds = Math.floor(ms / 1000);
+                    var hours = Math.floor(totalSeconds / 3600);
+                    var minutes = Math.floor((totalSeconds % 3600) / 60);
+                    var seconds = totalSeconds % 60;
+
+                    function pad(n) {
+                        return n < 10 ? '0' + n : '' + n;
+                    }
+
+                    return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+                }
+
+                function updateCountdown() {
+                    var now = Date.now();
+                    var remaining = startTs + DURATION_MS - now;
+                    if (remaining <= 0) {
+                        countdownEl.textContent = '00:00:00';
+                        overlay.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                        return;
+                    }
+                    countdownEl.textContent = formatTime(remaining);
+                }
+
+                document.body.style.overflow = 'hidden';
+                updateCountdown();
+                setInterval(updateCountdown, 1000);
+            })();
+
             // Lightbox functionality
             function openLightbox(imageSrc, caption) {
                 const lightbox = document.getElementById('lightbox');
