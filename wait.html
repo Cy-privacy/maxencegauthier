@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waiting until Max pays</title>
+    <title>Maxence Gauthier: Self-Proclaimed Gambling Addict Allegedly Willing To Do Anything For 1k</title>
+    <meta name="description" content="Documented public information and allegations about Maxence Gauthier and his alleged gambling-funded scams.">
     <meta name="robots" content="noindex, nofollow">
     <style>
         * {
@@ -12,139 +13,497 @@
             box-sizing: border-box;
         }
 
-        html, body {
-            height: 100%;
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: #000;
-            color: #f5f5f5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .bg {
-            position: fixed;
-            inset: 0;
-            background-image: url('IMG_3806.png');
-            background-size: cover;
-            background-position: center;
-            filter: blur(14px) brightness(0.4);
-            transform: scale(1.05);
-            z-index: -1;
-        }
-
-        .overlay {
-            position: relative;
-            max-width: 450px;
-            width: 90%;
-            background: rgba(0,0,0,0.8);
-            border-radius: 10px;
-            padding: 24px 28px;
-            text-align: center;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
-            border: 1px solid rgba(255,255,255,0.12);
-        }
-
-        h1 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            font-size: 0.9rem;
-            color: #cccccc;
-            margin-bottom: 18px;
-        }
-
-        .countdown {
-            font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            font-size: 1.8rem;
-            letter-spacing: 0.16em;
-            padding: 10px 14px;
-            border-radius: 6px;
-            background: #000;
-            display: inline-block;
-            margin-bottom: 14px;
-        }
-
-        .note {
-            font-size: 0.8rem;
-            color: #aaaaaa;
+            background: #f8f9fa;
+            color: #333;
             line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
-        @media (max-width: 480px) {
-            .overlay {
-                padding: 20px 18px;
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .bounty-notice {
+            /* Styles now inline for better rendering */
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #d32f2f;
+        }
+
+        .header h1 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+            color: #222;
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.85;
+            font-weight: 400;
+        }
+
+        .content {
+            padding: 60px 40px;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding: 0 0 30px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #333;
+            margin: 0 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.95em;
+        }
+
+        .info-table tr {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .info-table td {
+            padding: 12px 0;
+            vertical-align: top;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .info-table td:first-child {
+            font-weight: 500;
+            color: #555;
+            width: 200px;
+            font-size: 0.9em;
+            padding-right: 20px;
+        }
+
+        .info-table td:last-child {
+            color: #333;
+            font-weight: 400;
+        }
+
+        .info-table a {
+            color: #0066cc;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .info-table a:hover {
+            text-decoration: underline;
+        }
+
+        .subsection {
+            margin-top: 40px;
+        }
+
+        .subsection-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .photo-item {
+            text-align: center;
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 4px;
+            overflow: visible;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .gallery-caption {
+            margin-top: 8px;
+            font-size: 0.85em;
+            color: #444;
+            text-align: center;
+            opacity: 1 !important;
+            background: #f5f5f5;
+            padding: 8px;
+            border-radius: 4px;
+            font-weight: 500;
+            display: block !important;
+            visibility: visible !important;
+            position: static !important;
+        }
+        
+        /* Lightbox Styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90vh;
+            margin: 0 auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .lightbox img {
+            max-width: 100%;
+            max-height: 80vh;
+            border: 3px solid white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        
+        .lightbox-caption {
+            color: white;
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+        
+        .close-lightbox {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .photo-item .caption {
+            margin-top: 12px;
+            color: #666666;
+            font-size: 0.9em;
+        }
+
+        .timeline {
+            margin-top: 30px;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            padding-left: 25px;
+            border-left: 2px solid #000000;
+        }
+
+        .timeline-item h4 {
+            font-size: 1.05em;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .timeline-item p {
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        .quote-block {
+            background: #f8f8f8;
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 3px solid #000000;
+            font-style: italic;
+        }
+
+        .quote-block p {
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .quote-block .translation {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+            font-style: normal;
+            color: #000000;
+        }
+
+        .warning-list {
+            margin-top: 20px;
+        }
+
+        .warning-list li {
+            margin-bottom: 15px;
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        .warning-list strong {
+            color: #000000;
+        }
+
+        .download-box {
+            background: #f8f8f8;
+            padding: 25px;
+            margin-top: 25px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .download-box h4 {
+            font-size: 1.05em;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .download-box p {
+            color: #666666;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #000000;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: background 0.2s;
+        }
+
+        .download-btn:hover {
+            background: #333333;
+        }
+
+        .alert-box {
+            background: #000000;
+            color: white;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .alert-box h3 {
+            font-size: 1.4em;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .alert-box p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .alert-box ul {
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        .alert-box li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .bounty-box {
+            background: #1a5f1a;
+            color: white;
+            padding: 40px;
+            margin-top: 40px;
+            border: 2px solid #0d3d0d;
+        }
+
+        .bounty-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .bounty-box p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .bounty-box .contact {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .footer {
+            background: #f8f8f8;
+            padding: 40px;
+            text-align: center;
+            color: #666666;
+            font-size: 0.9em;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 60px 30px;
             }
 
-            h1 {
-                font-size: 1.2rem;
+            .header h1 {
+                font-size: 1.6em;
             }
 
-            .countdown {
-                font-size: 1.4rem;
+            .content {
+                padding: 40px 30px;
+            }
+
+            .info-table td:first-child {
+                display: block;
+                width: 100%;
+                padding-bottom: 5px;
+            }
+
+            .info-table td:last-child {
+                display: block;
+                padding-top: 0;
             }
         }
     </style>
 </head>
 <body>
-    <div class="bg"></div>
-    <div class="overlay">
-        <h1>Waiting until Max pays</h1>
-        <div class="subtitle">This page will automatically open the full report once the countdown reaches zero.</div>
-        <div id="countdown" class="countdown">18:00:00</div>
-        <div class="note">
-            Countdown is based on a fixed start time stored in your browser. Refreshing will not reset it.
+    <div class="container">
+        <div class="header">
+            <h1>Maxence Gauthier : Alleged Gambling Addict Who Treats 1k Like A Life Mission</h1>
+            <div class="subtitle" style="color: #d32f2f; font-weight: 600; letter-spacing: 1px;">A documented case of allegedly creative crypto "investing" and gambling habits</div>
+            <div style="font-size: 0.9em; margin-top: 5px; color: #666;">Last Updated: November 2023</div>
         </div>
-    </div>
 
-    <script>
-        (function () {
-            var countdownEl = document.getElementById('countdown');
-            if (!countdownEl) return;
+        <div class="content">
+            <div style="background: #4CAF50; padding: 15px; margin: 20px 0; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); color: white; text-align: center;">
+                <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 4px; margin-bottom: 8px;">
+                    <span style="font-size: 1.5em; font-weight: 700;">$500 REWARD</span>
+                </div>
+                <div style="font-size: 0.9em; margin-bottom: 8px;">For the person who does the single most genuinely good, fully lawful thing that can happen to him, FOR THE REWARD </div>
+                <div style="font-size: 0.8em; opacity: 0.9; margin-bottom: 8px;">Contact: <strong>benoitcybersafe@proton.me</strong></div>
+                <div style="font-size: 0.7em; opacity: 0.8; font-style: italic;">Please note: this is not an invitation to do anything bad to him. Only legal, non‑violent, non‑harassing actions qualify. Reward is discretionary and subject to verification.</div>
+                </div>
+            </div>
+                <div style="font-size: 0.8em; color: #666; margin-top: 10px; padding: 10px; background: #f9f9f9; border-radius: 4px;">
+                    <strong>DMCAopyright:</strong> If you believe any content on this page infringes on your rights, please contact our designated agent at benoitcybersafe@proton.me with the specific details of your claim, including the exact content in question and your contact information. (No spam, we get enough of that from crypto scammers!)
+                </div>
+            </div>
 
-            var STORAGE_KEY = 'max_wait_start_ts_v1';
-            var DURATION_MS = 18 * 60 * 60 * 1000; // 18 hours
-
-            var stored = localStorage.getItem(STORAGE_KEY);
-            var startTs = stored ? parseInt(stored, 10) : NaN;
-            if (isNaN(startTs)) {
-                startTs = Date.now();
-                try {
-                    localStorage.setItem(STORAGE_KEY, String(startTs));
-                } catch (e) {}
-            }
-
-            function pad(n) { return n < 10 ? '0' + n : '' + n; }
-
-            function formatTime(ms) {
-                if (ms < 0) ms = 0;
-                var totalSeconds = Math.floor(ms / 1000);
-                var hours = Math.floor(totalSeconds / 3600);
-                var minutes = Math.floor((totalSeconds % 3600) / 60);
-                var seconds = totalSeconds % 60;
-                return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
-            }
-
-            function tick() {
-                var now = Date.now();
-                var remaining = startTs + DURATION_MS - now;
-                if (remaining <= 0) {
-                    countdownEl.textContent = '00:00:00';
-                    window.location.href = 'index.html';
-                    return;
-                }
-                countdownEl.textContent = formatTime(remaining);
-            }
-
-            tick();
-            setInterval(tick, 1000);
-        })();
-    </script>
+            <div class="section">
+                <h2 class="section-title">Identity Information</h2>
+                <table class="info-table">
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Maxence Gauthier</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>February 19, 2005 (20 years old)</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>25 Rue des Mariottes<br>21121 Ahuy, France</td>
+                    </tr>
+                    <tr>
+                        <td>IP Address</td>
+                        <td>90.100.113.141</td>
+                    </tr>
+                    <tr>
+                        <td>Discord</td>
+                        <td>@maxencez_z</td>
+                    </tr>
+                    <tr>
+                        <td>Discord ID</td>
+                        <td>1321190232405577758</td>
+                    </tr>
+                    <tr>
+                        <td>Telegram</td>
+                        <td>@Maxencezz<br>+33 7 56 96 50 63</td>
+                    </tr>
+                    <tr>
+                        <td>Snapchat</td>
+                        <td>maxencezzzzz</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td><a href="https://www.instagram.com/maxencezz" target="_blank">instagram.com/maxencezz</a></td>
+                    </tr>
+                    <tr>
+                        <td>TikTok</td>
+                        <td><a href="https://www.tiktok.com/@maxencezz" target="_blank">@maxencezz</a></td>
+                    </tr>
+                </table>
+                
+                <!-- Remaining sections omitted here for brevity -->
+            </div>
+    
 </body>
 </html>
