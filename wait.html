@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxence Gauthier: Self-Proclaimed Gambling Addict Allegedly Willing To Do Anything For 1k</title>
+    <meta name="description" content="Documented public information and allegations about Maxence Gauthier and his alleged gambling-funded scams.">
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .bounty-notice {
+            /* Styles now inline for better rendering */
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #d32f2f;
+        }
+
+        .header h1 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+            color: #222;
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.85;
+            font-weight: 400;
+        }
+
+        .content {
+            padding: 60px 40px;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding: 0 0 30px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #333;
+            margin: 0 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.95em;
+        }
+
+        .info-table tr {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .info-table td {
+            padding: 12px 0;
+            vertical-align: top;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .info-table td:first-child {
+            font-weight: 500;
+            color: #555;
+            width: 200px;
+            font-size: 0.9em;
+            padding-right: 20px;
+        }
+
+        .info-table td:last-child {
+            color: #333;
+            font-weight: 400;
+        }
+
+        .info-table a {
+            color: #0066cc;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .info-table a:hover {
+            text-decoration: underline;
+        }
+
+        .subsection {
+            margin-top: 40px;
+        }
+
+        .subsection-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .photo-item {
+            text-align: center;
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 4px;
+            overflow: visible;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .gallery-caption {
+            margin-top: 8px;
+            font-size: 0.85em;
+            color: #444;
+            text-align: center;
+            opacity: 1 !important;
+            background: #f5f5f5;
+            padding: 8px;
+            border-radius: 4px;
+            font-weight: 500;
+            display: block !important;
+            visibility: visible !important;
+            position: static !important;
+        }
+        
+        /* Lightbox Styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90vh;
+            margin: 0 auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .lightbox img {
+            max-width: 100%;
+            max-height: 80vh;
+            border: 3px solid white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        
+        .lightbox-caption {
+            color: white;
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+        
+        .close-lightbox {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .photo-item .caption {
+            margin-top: 12px;
+            color: #666666;
+            font-size: 0.9em;
+        }
+
+        .timeline {
+            margin-top: 30px;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            padding-left: 25px;
+            border-left: 2px solid #000000;
+        }
+
+        .timeline-item h4 {
+            font-size: 1.05em;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .timeline-item p {
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        .quote-block {
+            background: #f8f8f8;
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 3px solid #000000;
+            font-style: italic;
+        }
+
+        .quote-block p {
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .quote-block .translation {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+            font-style: normal;
+            color: #000000;
+        }
+
+        .warning-list {
+            margin-top: 20px;
+        }
+
+        .warning-list li {
+            margin-bottom: 15px;
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        .warning-list strong {
+            color: #000000;
+        }
+
+        .download-box {
+            background: #f8f8f8;
+            padding: 25px;
+            margin-top: 25px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .download-box h4 {
+            font-size: 1.05em;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .download-box p {
+            color: #666666;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #000000;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: background 0.2s;
+        }
+
+        .download-btn:hover {
+            background: #333333;
+        }
+
+        .alert-box {
+            background: #000000;
+            color: white;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .alert-box h3 {
+            font-size: 1.4em;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .alert-box p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .alert-box ul {
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        .alert-box li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .bounty-box {
+            background: #1a5f1a;
+            color: white;
+            padding: 40px;
+            margin-top: 40px;
+            border: 2px solid #0d3d0d;
+        }
+
+        .bounty-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .bounty-box p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .bounty-box .contact {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .footer {
+            background: #f8f8f8;
+            padding: 40px;
+            text-align: center;
+            color: #666666;
+            font-size: 0.9em;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 60px 30px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .content {
+                padding: 40px 30px;
+            }
+
+            .info-table td:first-child {
+                display: block;
+                width: 100%;
+                padding-bottom: 5px;
+            }
+
+            .info-table td:last-child {
+                display: block;
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Maxence Gauthier : Alleged Gambling Addict Who Treats 1k Like A Life Mission</h1>
+            <div class="subtitle" style="color: #d32f2f; font-weight: 600; letter-spacing: 1px;">A documented case of allegedly creative crypto "investing" and gambling habits</div>
+            <div style="font-size: 0.9em; margin-top: 5px; color: #666;">Last Updated: November 2023</div>
+        </div>
+
+        <div class="content">
+            <div style="background: #4CAF50; padding: 15px; margin: 20px 0; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); color: white; text-align: center;">
+                <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 4px; margin-bottom: 8px;">
+                    <span style="font-size: 1.5em; font-weight: 700;">$500 REWARD</span>
+                </div>
+                <div style="font-size: 0.9em; margin-bottom: 8px;">For the person who does the single most genuinely good, fully lawful thing that can happen to him, FOR THE REWARD </div>
+                <div style="font-size: 0.8em; opacity: 0.9; margin-bottom: 8px;">Contact: <strong>benoitcybersafe@proton.me</strong></div>
+                <div style="font-size: 0.7em; opacity: 0.8; font-style: italic;">Please note: this is not an invitation to do anything bad to him. Only legal, non‑violent, non‑harassing actions qualify. Reward is discretionary and subject to verification.</div>
+                </div>
+            </div>
+                <div style="font-size: 0.8em; color: #666; margin-top: 10px; padding: 10px; background: #f9f9f9; border-radius: 4px;">
+                    <strong>DMCA/Copyright:</strong> If you believe any content on this page infringes on your rights, please contact our designated agent at benoitcybersafe@proton.me with the specific details of your claim, including the exact content in question and your contact information. (No spam, we get enough of that from crypto scammers!)
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Identity Information</h2>
+                <table class="info-table">
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Maxence Gauthier</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>February 19, 2005 (20 years old)</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>25 Rue des Mariottes<br>21121 Ahuy, France</td>
+                    </tr>
+                    <tr>
+                        <td>IP Address</td>
+                        <td>90.100.113.141</td>
+                    </tr>
+                    <tr>
+                        <td>Discord</td>
+                        <td>@maxencez_z</td>
+                    </tr>
+                    <tr>
+                        <td>Discord ID</td>
+                        <td>1321190232405577758</td>
+                    </tr>
+                    <tr>
+                        <td>Telegram</td>
+                        <td>@Maxencezz<br>+33 7 56 96 50 63</td>
+                    </tr>
+                    <tr>
+                        <td>Snapchat</td>
+                        <td>maxencezzzzz</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td><a href="https://www.instagram.com/maxencezz" target="_blank">instagram.com/maxencezz</a></td>
+                    </tr>
+                    <tr>
+                        <td>TikTok</td>
+                        <td><a href="https://www.tiktok.com/@maxencezz" target="_blank">@maxencezz</a></td>
+                    </tr>
+                </table>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">Family</h3>
+                    <table class="info-table">
+                        <tr>
+                            <td>Father</td>
+                            <td>François Gauthier</td>
+                        </tr>
+                        <tr>
+                            <td>Father's Facebook</td>
+                            <td><a href="https://www.facebook.com/share/1ZKtNHTMrc/?mibextid=wwXIfr" target="_blank">facebook.com/share/1ZKtNHTMrc</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sister</td>
+                            <td>Victoire Gauthier (Baddie)</td>
+                        </tr>
+                        <tr>
+                            <td>Sister's Instagram</td>
+                            <td><a href="https://www.instagram.com/vic.toiregauthier?igsh=bTc1NG02MmxrMzRm" target="_blank">instagram.com/vic.toiregauthier</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">Property</h3>
+                    <table class="info-table">
+                        <tr>
+                            <td>Location</td>
+                            <td><a href="https://www.google.com/maps/@47.3626295,5.0260293,3a,75y,10.5h,92.24t/data=!3m7!1e1!3m5!1sWcIZzP-CnEBB89AtPvUlQw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-2.237623856065028%26panoid%3DWcIZzP-CnEBB89AtPvUlQw%26yaw%3D10.5026900170842!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank">View on Google Street View</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Visual Evidence (Because seeing is believing... and sometimes cringing)</h2>
+                <div class="gallery" id="evidenceGallery">
+                <div class="gallery-item" onclick="openLightbox('1764362948990_image.png', '25 Rue des Mariottes, 21121 Ahuy, France')">
+                    <img src="1764362948990_image.png" alt="25 Rue des Mariottes, 21121 Ahuy, France">
+                    <div class="gallery-caption">25 Rue des Mariottes, 21121 Ahuy, France - The only thing not in the cloud</div>
+                </div>
+                    <div class="gallery-item" onclick="openLightbox('1764362952117_image.png', 'Maxence Gauthier with father François Gauthier')">
+                        <img src="1764362952117_image.png" alt="Maxence Gauthier with father François Gauthier">
+                        <div class="gallery-caption">François Gauthier - Teaching the next generation the family business (allegedly)</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('1764362955170_image.png', 'Maxence Gauthier (current)')">
+                        <img src="1764362955170_image.png" alt="Maxence Gauthier (current)">
+                        <div class="gallery-caption">Maxence Gauthier - When your LinkedIn photo doesn't match your Interpol photo</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('snap.png', 'Snapchat profile screenshot')">
+                        <img src="snap.png" alt="Snapchat profile">
+                        <div class="gallery-caption">Snapchat profile - Because some conversations are better left ephemeral (and unsubpoenaed)</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('IMG_3806.png', 'Victoire Gauthier (sister)')">
+                        <img src="IMG_3806.png" alt="Victoire Gauthier (sister)">
+                        <div class="gallery-caption">Victoire Gauthier - The family's designated baddie (allegedly)</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('1764364109877_image.png', 'Victoire Gauthier (sister)')">
+                        <img src="1764364109877_image.png" alt="Victoire Gauthier (sister)">
+                        <div class="gallery-caption">Victoire Gauthier - The family's designated baddie (allegedly)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid #ff9800;">
+                    <h3>Family Matters Update:</h3>
+                    <p>The Gauthier family has recently discovered the true meaning of "blockchain" - something that's both transparent and impossible to alter after the fact. A valuable lesson for all aspiring entrepreneurs.</p>
+                </div>
+
+                <h2 class="section-title">Father's Business: A Masterclass in Contrasts</h2>
+                <p>Because every family needs at least one person who files taxes properly</p>
+                <table class="info-table">
+                    <tr>
+                        <td>Owner</td>
+                        <td>François Gauthier</td>
+                    </tr>
+                    <tr>
+                        <td>Business Name</td>
+                        <td>LE FLAMANT ROSE</td>
+                    </tr>
+                    <tr>
+                        <td>SIREN</td>
+                        <td>340 293 844</td>
+                    </tr>
+                    <tr>
+                        <td>SIRET</td>
+                        <td>34029384400056</td>
+                    </tr>
+                    <tr>
+                        <td>Activity</td>
+                        <td>Road Vehicle Transport</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>25 Rue des Mariottes<br>21121 Ahuy, France</td>
+                    </tr>
+                </table>
+
+                <div class="download-box">
+                    <h4>Official Business Registration Document</h4>
+                    <p>Fun fact: This is the only document in this entire case that's actually registered with the government</p>
+                    <p>INPI (French National Institute of Industrial Property) registration document</p>
+                    <a href="Export_Portail_Data_GAUTHIER_Du_28-11-2025.pdf" download class="download-btn">Download PDF Document</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">The Confession: When the Mask Slips</h2>
+                <p>In a stunning display of candor rarely seen outside of police interrogation rooms, Maxence Gauthier provides us with a masterclass in how not to run a business. His words, not ours (but we're happy to quote them).</p>
+                
+                <div class="screenshot-container" style="text-align: center; margin: 30px 0; background: #f8f9fa; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+                    <img src="lol.png" alt="Maxence Gauthier admitting to scamming" style="max-width: 100%; border-radius: 4px; margin-bottom: 15px;">
+                    <p class="image-caption" style="font-style: italic; color: #666; font-size: 0.9em;">
+                        "I just need to scam someone else so i can refund you" - Maxence Gauthier,
+                    </p>
+                </div>
+
+
+                <h2 class="section-title" style="margin-top: 40px;">Alleged Scam Methodology (For educational purposes only!)</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Phase 1: Trust Building</h4>
+                        <p>Initial contact via social media. Engaged in 3 days of conversation including Discord video calls. Displayed fake cryptocurrency portfolio showing €592,509 using Delta by eToro application.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Phase 2: Investment Pitch</h4>
+                        <p>Presented vague "investment project" opportunity with minimal details. Requested cryptocurrency investment from victim.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Phase 3: Fund Misappropriation</h4>
+                        <p>Transferred victim's funds directly to Stake.com gambling platform to "mix" cryptocurrency and hide transaction trail.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Phase 4: Additional Requests</h4>
+                        <p>Requested more funds claiming project needs additional capital. Made threats when questioned about legitimacy.</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">Direct Quotes</h3>
+                    <div class="quote-block">
+                        <p>"Parce qu'il doit le mixer via Stake on t'a dit on a plus de dev"</p>
+                        <p>"Parce que dcp après tu sais plus vers où y part"</p>
+                        <div class="translation">
+                            English: "Because it has to be mixed via Stake as we told you we have no more dev" / "Because then you don't know where it goes anymore"
+                        </div>
+                    </div>
+
+                    <div class="quote-block">
+                        <p>"Reposer 1k tu peux vrm pas ? Je te donne ma carte identité mon adresse mon passeport si sa te rassure si je te scam mdrrr. Mai tu leak un truc je te bz"</p>
+                        <div class="translation">
+                            English: "Can't you send another 1k? I'll give you my ID card, my address, my passport if it reassures you if I scam you lol. But if you leak anything I'll buzz you"
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Warning Signs</h2>
+                <ul class="warning-list">
+                    <li><strong>Fake wealth display:</strong> Showed fabricated cryptocurrency portfolio to establish false credibility</li>
+                    <li><strong>Money laundering admission:</strong> Openly stated funds would be "mixed" via Stake.com to hide transaction trails</li>
+                    <li><strong>Vague project details:</strong> Never provided concrete information about investment or business plan</li>
+                    <li><strong>Gambling platform transfer:</strong> Sent victim funds to casino site instead of legitimate business</li>
+                    <li><strong>Threats:</strong> Made implicit threats when legitimacy questioned</li>
+                    <li><strong>Additional fund requests:</strong> Immediately asked for more money after receiving initial payment</li>
+                    <li><strong>False document offers:</strong> Offered identity documents to create false trust</li>
+                </ul>
+            </div>
+
+            <div class="alert-box">
+                <h3>Public Warning</h3>
+                <p><strong>This individual is actively conducting cryptocurrency fraud.</strong></p>
+                
+                <p>Do not send cryptocurrency or money to this person under any circumstances. Do not trust investment opportunities or financial projects presented.</p>
+
+                <p><strong>If contacted by this individual:</strong></p>
+                <ul>
+                    <li>Block all communication channels immediately</li>
+                    <li>Do not respond to messages or threats</li>
+                    <li>Report to platform administrators</li>
+                    <li>Document all interactions</li>
+                    <li>Report to local authorities if funds were sent</li>
+                </ul>
+
+                <p><strong>If you sent funds:</strong></p>
+                <ul>
+                    <li>Do not send additional money for any reason</li>
+                    <li>Document everything and file police report</li>
+                    <li>Block the scammer completely</li>
+                    <li>Share this report to warn others</li>
+                </ul>
+            </div>
+
+            <!-- Lightbox Container -->
+            <div id="lightbox" class="lightbox">
+                <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    <img id="lightbox-img" src="" alt="">
+                    <div id="lightbox-caption" class="lightbox-caption"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            // Lightbox functionality
+            function openLightbox(imageSrc, caption) {
+                const lightbox = document.getElementById('lightbox');
+                const lightboxImg = document.getElementById('lightbox-img');
+                const lightboxCaption = document.getElementById('lightbox-caption');
+                
+                lightbox.style.display = 'block';
+                lightboxImg.src = imageSrc;
+                lightboxCaption.textContent = caption || '';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
+            }
+            
+            function closeLightbox() {
+                const lightbox = document.getElementById('lightbox');
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+            }
+            
+            // Close lightbox when clicking outside the image
+            window.onclick = function(event) {
+                const lightbox = document.getElementById('lightbox');
+                if (event.target == lightbox) {
+                    closeLightbox();
+                }
+            }
+            
+            // Close with ESC key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    closeLightbox();
+                }
+            });
+        </script>
+
+        <div class="footer">
+            <div class="legal-disclaimer">
+                <h3>Legal Disclaimer</h3>
+                <p>1. This document is for informational purposes only and does not constitute legal advice.</p>
+                <p>2. The information is provided "as is" without any representations or warranties.</p>
+                <p>3. Readers should conduct their own research and consult with legal professionals.</p>
+                <p>4. The publisher is not responsible for any actions taken based on this information.</p>
+                <p>5. Any individuals mentioned are presumed innocent until proven guilty in a court of law.</p>
+            </div>
+            <p>Last updated: November 28, 2025</p>
+            <p>Report date: November 28, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
